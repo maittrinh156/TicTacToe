@@ -58,9 +58,12 @@ class BoardInteractor:
         win = self.checkWin()
         
         if win != 0:
-            self.boardPresenter.showWinner(win)            
+            self.boardPresenter.showWinner(self.board.getUser(win))            
         elif self.isGameOver():
             self.boardPresenter.showGameOver()
+            
+    def addUsers(self, users):
+        self.board.updateUsers(users)
             
             
             

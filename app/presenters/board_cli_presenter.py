@@ -12,7 +12,7 @@ class BoardCLIPresenter(BoardPresenterInterface):
     
             
     def showWinner(self, win):
-        print(f"USER {win} WIN!")
+        print(f"{win} win!")
         
     def showGameOver(self):
         print("GAME OVER!")  
