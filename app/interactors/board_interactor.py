@@ -19,7 +19,7 @@ class BoardInteractor:
         lines = [states[1::4], states[3:8:2]]
         
         for i in range(1, 4):
-            lines.append(states[i:i+3])
+            lines.append(states[i:i+4])
             lines.append(states[i::3])
             
         for line in lines:
